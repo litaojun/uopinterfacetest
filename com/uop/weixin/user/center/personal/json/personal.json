@@ -1,0 +1,16 @@
+GET /member-service/members/personalCenter HTTP/1.1
+{
+    "code": "200",
+    "message": "请求成功",
+    "data": {
+        "success": true,
+        "envContext": null,
+        "errorContext": null,
+        "totalPoints": 50,
+        "sex": "1",
+        "nickName": "李涛军",
+        "headimgUrl": "http://wx.qlogo.cn/mmopen/6Jkxxk5dmNk7HlVN9mLz5BgiakCF8qpVYp4RyDfu7q0I3gu3fGcBr0ng7TyA7U2kYnXleiblKHQFjATH8jelOcbbb35nADZgry/0",
+        "isSign": false,
+        "readInvite": false
+    }
+}

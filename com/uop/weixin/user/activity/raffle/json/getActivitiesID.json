@@ -1,0 +1,65 @@
+POST /activities-service/raffle/getRaffleAllInfoByRaffleId HTTP/1.1
+
+{"memberId":"d3fa3fee-0f89-4f9a-bf38-75fedb8c8f95","raffleId":"bf541c74-55b3-433e-9a9f-a1e111729ada"}
+
+{
+    "success": true,
+    "envContext": {
+        "traceInfo": {
+            "traceId": "c9fe7477-8498-43f8-8da7-e3e5774e3e49",
+            "spanId": "1.0.66"
+        },
+        "webToken": null,
+        "ipAddress": null
+    },
+    "errorContext": null,
+    "memberTotalPoint": 19,
+    "residueDegree": 1,
+    "activitiesJoinCount": 0,
+    "raffleBaseInfo": {
+        "id": "bf541c74-55b3-433e-9a9f-a1e111729ada",
+        "title": "非即开活动-1122",
+        "subTitle": "",
+        "applyBeninDate": "2017-11-24 13:41:05",
+        "applyEndDate": "2017-12-09 13:41:25",
+        "raffleType": "01",
+        "lotteryTime": "2017-12-09 13:41:25",
+        "raffleDetail": "<div class=\"section-box-title\" style=\"margin:0px 0px 10px;padding:5px 0px 5px 10px;color:#333333;font-family:arial, Tahoma, \" background:#f6f6f6;\"=\"\">\r\n<h3 style=\"font-size:16px;\">\r\n\t产品概要\r\n</h3>\r\n\t</div>\r\n<div class=\"section-box-content\" style=\"margin:10px 0px 20px 10px;padding:0px;color:#333333;font-family:arial, Tahoma, \" background-color:#ffffff;\"=\"\">\r\n\t<div class=\"detail-feature-brief\" style=\"margin:0px;padding:0px;\">\r\n\t\t<div class=\"detail-feature-brief-item\" style=\"margin:0px;padding:0px 40px 0px 0px;color:#999999;\">\r\n\t\t\t行程天数：<span style=\"color:#333333;\">9天8晚</span> \r\n\t\t</div>\r\n\t\t<div class=\"detail-feature-brief-item\" style=\"margin:0px;padding:0px 40px 0px 0px;color:#999999;\">\r\n\t\t\t成团地点：<span style=\"color:#333333;\">南宁成团</span> \r\n\t\t</div>\r\n\t\t<div class=\"detail-feature-brief-item\" style=\"margin:0px;padding:0px 40px 0px 0px;color:#999999;\">\r\n\t\t\t目的地：<span style=\"color:#333333;\">北海</span> \r\n\t\t</div>\r\n\t\t<div class=\"detail-feature-brief-item\" style=\"margin:0px;padding:0px 40px 0px 0px;color:#999999;\">\r\n\t\t\t往返交通：<span style=\"color:#333333;\">飞机/飞机</span> \r\n\t\t</div>\r\n\t\t<div class=\"detail-feature-brief-item\" style=\"margin:0px;padding:0px 40px 0px 0px;color:#999999;\">\r\n\t\t\t报名截止时间：<span style=\"color:#333333;\">团期前1天18点</span><span class=\"Apple-converted-space\"> </span><a class=\"J_DetailFeatureDeadline\">查看全部报名截止时间<span class=\"icon\" style=\"vertical-align:text-top;\"></span></a> \r\n\t\t</div>\r\n\t\t<div class=\"detail-feature-brief-item\" style=\"margin:0px;padding:0px 40px 0px 0px;color:#999999;\">\r\n\t\t\t组团形式：<span class=\"Apple-converted-space\"> </span><span style=\"color:#333333;\">途牛独家发团；本产品为途牛独家发团产品，只接受途牛客人参团。</span> \r\n\t\t</div>\r\n\t\t<div class=\"detail-feature-brief-item\" style=\"margin:0px;padding:0px 40px 0px 0px;color:#999999;\">\r\n\t\t\t附加说明：<span class=\"Apple-converted-space\"> </span><span style=\"color:#333333;\">本行程与其他团队客人拼往返用车。仅限接送站服务拼车，当地根据实际接送站用车人数安排具体车辆</span> \r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n<div class=\"section-box-title\" style=\"margin:0px 0px 10px;padding:5px 0px 5px 10px;color:#333333;font-family:arial, Tahoma, \" background:#f6f6f6;\"=\"\">\r\n<h3 style=\"font-size:16px;\">\r\n\t产品特色\r\n</h3>\r\n\t</div>\r\n<div class=\"section-box-content\" style=\"margin:10px 0px 20px 10px;padding:0px;color:#333333;font-family:arial, Tahoma, \" background-color:#ffffff;\"=\"\"> <strong>产品特色详情</strong><br />\r\n两国体验，边境风情，护照在手，轻松出国；<br />\r\n1、全程0购物，无忧出行更放心！<br />\r\n2、安排国内四星配置标准住宿，境外升级为3晚国际挂四酒店，优于当地其他标准酒店，入住更舒适！<br />\r\n3、精选精华景点，越南段无自费景点，出行无忧！<br />\r\n4、全程30/成人的餐标，优于常规散拼低标准餐标，特别安排升级一顿越南海鲜自助餐，牛人专线，品质保证！\r\n</div>\r\n<div class=\"detail-feature-photos\" style=\"margin:0px 0px 0px 10px;padding:0px;color:#333333;font-family:arial, Tahoma, \" background-color:#ffffff;\"=\"\">\r\n<div class=\"detail-feature-photo detail-feature-photo-1\" style=\"margin:0px -10px 30px;padding:0px;\">\r\n\t<div class=\"detail-feature-photo-item\" style=\"margin:0px 0px -10px;padding:0px;\">\r\n\t\t<div class=\"detail-feature-photo-item-inner loaded\" style=\"margin:10px;padding:0px;background:none;\">\r\n\t\t\t<img src=\"http://m.tuniucdn.com/fb2/t1/G2/M00/08/6F/Cii-TFgsSneITA3ZAApGxGD5AIcAAEdrAP0_ncACkbc848_w1536_h0_c0_t0.jpg\" style=\"width:1018px;height:auto;\" /> \r\n\t\t</div>\r\n\t\t<div>\r\n\t\t\t<br />\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n\t</div>\r\n<div class=\"detail-feature-photos\" style=\"margin:0px 0px 0px 10px;padding:0px;color:#333333;font-family:arial, Tahoma, \" background-color:#ffffff;\"=\"\">\r\n\t<div class=\"detail-feature-photo detail-feature-photo-1\" style=\"margin:0px -10px 30px;padding:0px;\">\r\n\t\t<div class=\"detail-feature-photo-item\" style=\"margin:0px 0px -10px;padding:0px;\">\r\n\t\t</div>\r\n\t</div>\r\n</div>",
+        "point": 2,
+        "applyAccount": 1,
+        "activitiesType": "02",
+        "activitiesAddress": "S上海银山路757号，百事通大厦",
+        "shareTitle": "非即开活动-1122",
+        "shareDescription": "分析及",
+        "thumbnailImg": "http://uat-uop-wx.opg.cn/_static/images/raffle/20171122134351_731839.png",
+        "publishState": "01",
+        "nowDateTimestamp": 1511511948453,
+        "applyBeninTimestamp": 1511502065000,
+        "applyEndTimestamp": 1512798085000,
+        "raffleReminder": "<p style=\"color:#333333;font-family:arial, Tahoma, \" background-color:#ffffff;\"=\"\">\r\n\t旅游者在出发前提出解除合同的，应当按下列标准承担退团损失：\r\n\t</p>\r\n<div style=\"margin:0px;padding:0px;color:#333333;font-family:arial, Tahoma, \" background-color:#ffffff;\"=\"\"> <span class=\"dot\" style=\"font-weight:bold;\">•</span><span class=\"Apple-converted-space\"> </span>出发前14日及14日以上(按出发日减去解除合同通知到达日的自然日之差计算，下同)，按费用总额5%\r\n\t\t</div>\r\n<div style=\"margin:0px;padding:0px;color:#333333;font-family:arial, Tahoma, \" background-color:#ffffff;\"=\"\"> <span class=\"dot\" style=\"font-weight:bold;\">•</span><span class=\"Apple-converted-space\"> </span>出发前13日至7日，按费用总额30%；\r\n\t</div>\r\n<div style=\"margin:0px;padding:0px;color:#333333;font-family:arial, Tahoma, \" background-color:#ffffff;\"=\"\"> <span class=\"dot\" style=\"font-weight:bold;\">•</span><span class=\"Apple-converted-space\"> </span>出发前6日至4日，按费用总额50%；\r\n\t\t</div>\r\n<div style=\"margin:0px;padding:0px;color:#333333;font-family:arial, Tahoma, \" background-color:#ffffff;\"=\"\"> <span class=\"dot\" style=\"font-weight:bold;\">•</span><span class=\"Apple-converted-space\"> </span>出发前3日至1日，按费用总额60%；\r\n\t</div>\r\n<div style=\"margin:0px;padding:0px;color:#333333;font-family:arial, Tahoma, \" background-color:#ffffff;\"=\"\"> <span class=\"dot\" style=\"font-weight:bold;\">•</span><span class=\"Apple-converted-space\"> </span>出发当日，按费用总额80%。\r\n\t\t</div>",
+        "raffleRule": "<div class=\"item-label\" style=\"margin:0px 0px 0px -10px;padding:0px 0px 0px 110px;color:#333333;font-family:arial, Tahoma, \" background-color:#ffffff;\"=\"\">\r\n\t（1）合同一经签订且付全款，团队机票、列车票、船票即为出票，不得更改、签转、退票。<br />\r\n（2）飞行时间、车程时间、船程时间以当日实际所用时间为准。<br />\r\n（3）本产品如因淡季或收客人数较少，有可能与相近方向的发班线路拼车出游，届时请游客见谅。\r\n\t</div>\r\n<div class=\"item-label\" style=\"margin:0px 0px 0px -10px;padding:0px 0px 0px 110px;color:#333333;font-family:arial, Tahoma, \" background-color:#ffffff;\"=\"\"> <strong><span class=\"dot\">•</span>住宿信息：</strong>按2人入住1间房核算，如出现单男单女，尽量安排该客人与其他同性别团友拼房；\r\n</div>\r\n<div class=\"item-label\" style=\"margin:0px 0px 0px -10px;padding:0px 0px 0px 110px;color:#333333;font-family:arial, Tahoma, \" background-color:#ffffff;\"=\"\"> <strong><span class=\"dot\">•</span>团队用餐：</strong>十人一桌，八菜一汤，人数不足十人时，在每人用餐标准不变的前提下调整餐食的分量。\r\n\t</div>\r\n<div class=\"item-label\" style=\"margin:0px 0px 0px -10px;padding:0px 0px 0px 110px;color:#333333;font-family:arial, Tahoma, \" background-color:#ffffff;\"=\"\"> <strong><span class=\"dot\">•</span>游　　览：</strong>（1）景点游览、自由活动、购物店停留的时间以当天实际游览为准。<br />\r\n（2）行程中需自理门票和当地导游推荐项目，请自愿选择参加。<br />\r\n（3）请您仔细阅读本行程，根据自身条件选择适合自己的旅游线路，出游过程中，如因身体健康等自身原因需放弃部分行程的，或游客要求放弃部分住宿、交通的，均视为自愿放弃，已发生费用不予退还，放弃行程期间的人身安全由旅游者自行负责。<br />\r\n（4）团队游览中不允许擅自离团（自由活动除外），中途离团视同游客违约，按照合同总金额的20%赔付旅行社，由此造成未参加行程内景点、用\r\n</div>",
+        "activitiesBeginTime": "2017-11-23 20:41:17",
+        "activitiesEndTime": "2017-11-24 13:41:17",
+        "prizeCount": null,
+        "passPrompt": null,
+        "noPassPrompt": null
+    },
+    "rafflePrizeInfos": null,
+    "raffleMediaInfos": [
+        {
+            "id": "2c9b55f8-cf48-11e7-99b2-02d22a11ed1a",
+            "raffleId": "bf541c74-55b3-433e-9a9f-a1e111729ada",
+            "sortNumber": 1,
+            "imgUrl": "http://uat-uop-wx.opg.cn/_static/images/raffle/20171122134414_683271.png",
+            "imgType": null
+        },
+        {
+            "id": "3518d74b-cf48-11e7-99b2-02d22a11ed1a",
+            "raffleId": "bf541c74-55b3-433e-9a9f-a1e111729ada",
+            "sortNumber": 2,
+            "imgUrl": "http://uat-uop-wx.opg.cn/_static/images/raffle/20171122134429_30127.png",
+            "imgType": null
+        }
+    ],
+    "collectionInfo": null
+}

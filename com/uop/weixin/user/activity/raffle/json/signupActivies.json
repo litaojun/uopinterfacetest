@@ -1,0 +1,16 @@
+POST /activities-service/raffleResult/signUpNonOpenActivities HTTP/1.1
+{"memberId":"d3fa3fee-0f89-4f9a-bf38-75fedb8c8f95","activitiesId":"bf541c74-55b3-433e-9a9f-a1e111729ada","addressId":"eebc6970-c2ac-11e7-99b2-02d22a11ed1a"}
+
+{
+    "success": true,
+    "envContext": {
+        "traceInfo": {
+            "traceId": "0a9b2b4b-90c1-481a-af1c-8df116c06427",
+            "spanId": "1.0.70"
+        },
+        "webToken": null,
+        "ipAddress": null
+    },
+    "errorContext": null,
+    "resultId": "b21812b8-2cec-4613-92a9-80bd2565494e"
+}
