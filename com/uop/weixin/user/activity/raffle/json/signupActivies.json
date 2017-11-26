@@ -1,3 +1,4 @@
+#非即开活动抽奖提交
 POST /activities-service/raffleResult/signUpNonOpenActivities HTTP/1.1
 {"memberId":"d3fa3fee-0f89-4f9a-bf38-75fedb8c8f95","activitiesId":"bf541c74-55b3-433e-9a9f-a1e111729ada","addressId":"eebc6970-c2ac-11e7-99b2-02d22a11ed1a"}
 

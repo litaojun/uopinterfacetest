@@ -1,3 +1,4 @@
+#我的活动列表
 POST /activities-service/raffleResult/getMemberRaffleReCords HTTP/1.1
 {"memberId":"997da560-6de2-4056-8614-e7cd95dd967b","page":1,"limit":10}
 

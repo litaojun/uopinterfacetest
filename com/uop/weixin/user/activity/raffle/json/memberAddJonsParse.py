@@ -10,6 +10,8 @@ import json
 useraddressScma = {}
 validator = Validator(useraddressScma)
 @check_rspdata(validator)
+
+#非即开活动提交时，获取地址ID
 def parseMemberDefalutAddJSON(resphome):
     addressjson = resphome.TEXT
     useraddressid = addressjson.get("data").get("id")

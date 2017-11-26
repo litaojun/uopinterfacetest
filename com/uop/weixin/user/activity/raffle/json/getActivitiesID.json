@@ -1,5 +1,5 @@
+#通过非即开活动ID获取对应详情信息 
 POST /activities-service/raffle/getRaffleAllInfoByRaffleId HTTP/1.1
-
 {"memberId":"d3fa3fee-0f89-4f9a-bf38-75fedb8c8f95","raffleId":"bf541c74-55b3-433e-9a9f-a1e111729ada"}
 
 {

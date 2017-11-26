@@ -2,14 +2,15 @@
 # -*- coding:utf-8 -*-
 
 '''
-Created on 2017年11月20日
+Created on 2017
 
 @author: li.taojun
 '''
 import json
-#解析第一层JSON的KEY
+#
 def parseMemberDefalutAddJSON(resphome):
     pass
+#闈炲嵆寮�娲诲姩鎻愪氦璇锋眰json鏁版嵁
 def transUserSignupActivitiesHttpJson(memberid="",activitiesid = "",addressid = ""):
     usersignactivities = {
                            "memberId":memberid,

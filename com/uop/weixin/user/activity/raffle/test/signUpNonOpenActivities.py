@@ -1,5 +1,5 @@
 '''
-Created on 2017年11月20日
+Created on 2017锟斤拷11锟斤拷20锟斤拷
 
 @author: li.taojun
 '''
@@ -8,11 +8,12 @@ from opg.unit.parametrized import ParametrizedTestCase
 from com.uop.util.configurl import memeraddressurl,signUpOpenActUrl
 from com.uop.util.jsonTransform import transUopHttpHears
 from com.uop.weixin.user.activity.raffle.json.memberAddJonsParse import parseMemberDefalutAddJSON
-from com.uop.weixin.user.activity.raffle.json.signUpActivitiesJsonParse import transUserSignupActivitiesHttpJson
+from com.uop import transUserSignupActivitiesHttpJson
 from com.uop.weixin.user.activity.raffle.cpr.userSignActivitiesCpr import checkSignUpActivitiesResultFormat
 import requests
 from com.uop.weixin.user.activity.raffle.service.signupActivitiesService import SignUpActivitiesService
 from com.uop.weixin.user.center.personal.service.personalCenterService import MemberPerCenterService
+
 class SignUpActivities(ParametrizedTestCase):
       __interfaceName__ = "/activities-service/raffleResult/signUpNonOpenActivities"
       
@@ -28,10 +29,12 @@ class SignUpActivities(ParametrizedTestCase):
           self.userSignupActivities = signUpOpenActUrl
          
       def userSignUpActivities(self):
-          #非即开活动报名返回数据
+          #
           preuserTotalPoint = self.personalCenterService.getPersonalSign()
+          activitiesPoint = self.signupservice.getActivitiesPointByAid()
           userSignUpResultJson = self.signupservice.userSignupActivities()
           self.assertTrue(checkSignUpActivitiesResultFormat(userSignUpResultJson))
+          
           
           
 if __name__ == '__main__':

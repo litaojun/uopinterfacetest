@@ -11,7 +11,7 @@ from com.uop.util.jsonTransform import transUopHttpHears
 from com.uop.weixin.user.activity.raffle.json.memberAddJonsParse import parseMemberDefalutAddJSON
 from com.uop.weixin.user.activity.raffle.json.signUpActivitiesJsonParse import transUserSignupActivitiesHttpJson
 from com.uop.weixin.user.activity.raffle.cpr.userSignActivitiesCpr import checkSignUpActivitiesResultFormat
-
+from com.uop.weixin.user.activity.raffle import parseActivitiesPointByRspJSON
 class SignUpActivitiesService(object):
     '''
     classdocs
@@ -41,7 +41,9 @@ class SignUpActivitiesService(object):
     def getActivitiesPointByAid(self):
         jsonheart = transUopHttpHears(self.memberId,self.openid)
         activityrspjson = requests.get(url=self.defaultAddress,headers = jsonheart)
-        
+        activitiesPoint = parseActivitiesPointByRspJSON(activityrspjson)
+        return activitiesPoint
+    
         
 if __name__ == "__main__":
     a = SignUpActivitiesService("","","")

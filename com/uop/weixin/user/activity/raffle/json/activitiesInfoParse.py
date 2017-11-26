@@ -1,12 +1,12 @@
 '''
-Created on 2017Äê11ÔÂ24ÈÕ
+Created on 2017ï¿½ï¿½11ï¿½ï¿½24ï¿½ï¿½
 
 @author: li.taojun
 '''
 from com.uop.util.schemajson import check_rspdata,Validator
 import json
 
-userCenterScma = {
+activitiesInfoScma = {
                    "type":"object",
                    "properties":
                                 {
@@ -28,11 +28,13 @@ userCenterScma = {
                                             }
                                  }
                    }
-validator = Validator(userCenterScma)
-#
+validator = Validator(activitiesInfoScma)
+#è·å–éå³å¼€æ´»åŠ¨æ‰€éœ€ç§¯åˆ†
 @check_rspdata(validator)
-def parseUserPointByRspJSON(response=None):
+def parseActivitiesPointByRspJSON(response=None):
     #addressjson = response.TEXT\
     print "response=%s" % str(response)
+    activitiesPoint = response.get("raffleBaseInfo").get("point")
+    return activitiesPoint
 if __name__ == '__main__':
     pass
