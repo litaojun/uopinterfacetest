@@ -29,16 +29,26 @@ class PersonalActiviesService(object):
         self.openid = openid
         self.userActiviesUrl = userActiviesUrl
         
+    #获取我的活动列表
     def userActivies(self):
         jsonheart = transUopHttpHears(self.memberId,self.openid)
         actjson = {"memberId":self.memberId,"page":1,"limit":10}
         activityrspjson = requests.post(url=self.userActiviesUrl,json = actjson,headers = jsonheart,verify=False)
         return activityrspjson
     
+    #得到活动ID列表
     def getActivitiesidList(self):
         actjson = self.userActivies()
         actidls = parseActivitiesIdFromJson(response = json.loads(actjson.text))
         return actidls
+    
+    #检查活动ID是否存在
+    def checkActivitiesExsit(self,activiId = ""):
+        sign = False
+        actidls = self.getActivitiesidList()
+        if activiId in actidls:
+            sign = True
+        return sign
     
     def setUserActiviesUrl(self,url):
         self.userActiviesUrl = url
