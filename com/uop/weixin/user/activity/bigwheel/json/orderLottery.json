@@ -1,0 +1,6 @@
+#中奖后，提交地址
+POST /order-service/orders/lottery/address HTTP/1.1
+
+{"id":"68c36516-0cdf-4f80-83c8-2adcd271c2a3","addressId":"eebc6970-c2ac-11e7-99b2-02d22a11ed1a"}
+
+{"code":"000000","message":"成功","data":null}

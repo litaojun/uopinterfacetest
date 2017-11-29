@@ -6,3 +6,4 @@ from .json.signUpActivitiesJsonParse import transUserSignupActivitiesHttpJson
 from .cpr.userSignActivitiesCpr import checkSignUpActivitiesResultFormat
 from .service.signupActivitiesService import SignUpActivitiesService
 from .json.activitiesInfoParse import parseActivitiesPointByRspJSON
+#·Ç¼´¿ª³é½±

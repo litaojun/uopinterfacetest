@@ -1,0 +1,25 @@
+#抽奖动作
+POST /activities-service/raffleResult/luckDraw HTTP/1.1
+{"memberId":"d3fa3fee-0f89-4f9a-bf38-75fedb8c8f95","activitiesId":"358ddebc-fa7e-4160-80ac-02803ec94e30"}
+
+{
+    "success": true,
+    "envContext": {
+        "traceInfo": {
+            "traceId": "78be38b2-08eb-4b26-b336-ec5acd34607d",
+            "spanId": "1.0.38"
+        },
+        "webToken": null,
+        "ipAddress": null
+    },
+    "errorContext": null,
+    "luckDrawResultInfo": {
+        "resultId": "0b202e98-cb4e-4f9e-abdb-6af7f79491b2",
+        "raffleResult": "00",
+        "prizeId": "71eb54f5-d416-11e7-88a9-02667449c382",
+        "prizeName": "手机",
+        "prizeDescribe": "不含添加剂",
+        "prizeImg": "http://uat-uop-wx.opg.cn/_static/images/raffle/20171128163052_804991.jpg",
+        "orderId": "68c36516-0cdf-4f80-83c8-2adcd271c2a3"
+    }
+}

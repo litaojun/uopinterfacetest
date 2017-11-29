@@ -1,0 +1,23 @@
+#获取默认地址
+GET /member-service/address/memberId HTTP/1.1
+
+{
+    "code": "200",
+    "message": "请求成功",
+    "data": [
+        {
+            "id": "eebc6970-c2ac-11e7-99b2-02d22a11ed1a",
+            "memberId": "d3fa3fee-0f89-4f9a-bf38-75fedb8c8f95",
+            "phone": "18916899938",
+            "consignee": "李涛军",
+            "province": "河北省",
+            "city": "石家庄市",
+            "county": "井陉县",
+            "address": "听咯噢噢噢哦哦",
+            "addressCode": "130000,130100,130121",
+            "state": "00",
+            "isDefault": "00",
+            "createTime": null
+        }
+    ]
+}

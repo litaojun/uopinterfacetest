@@ -1,0 +1,72 @@
+#根据活动ID获取活动详情
+POST /activities-service/raffle/getRaffleAllInfoByRaffleId
+{"memberId":"d3fa3fee-0f89-4f9a-bf38-75fedb8c8f95","raffleId":"358ddebc-fa7e-4160-80ac-02803ec94e30"}
+{
+    "success": true,
+    "envContext": {
+        "traceInfo": {
+            "traceId": "89b7159e-1981-4f68-a7c1-2ee347310f11",
+            "spanId": "1.0.35"
+        },
+        "webToken": null,
+        "ipAddress": null
+    },
+    "errorContext": null,
+    "memberTotalPoint": 47,
+    "residueDegree": 1,
+    "activitiesJoinCount": 0,
+    "raffleBaseInfo": {
+        "id": "358ddebc-fa7e-4160-80ac-02803ec94e30",
+        "title": "大转盘-抽奖测试1128",
+        "subTitle": "大转盘-抽奖测试1128",
+        "applyBeninDate": "2017-11-28 16:29:53",
+        "applyEndDate": "2017-11-29 16:29:55",
+        "raffleType": "00",
+        "lotteryTime": null,
+        "raffleDetail": "反反复复反反复复反反复复反反复复反反复复反反复复",
+        "point": 3,
+        "applyAccount": 1,
+        "activitiesType": "00",
+        "activitiesAddress": "百视通大楼",
+        "shareTitle": "大转盘-抽奖测试1128-分享标题",
+        "shareDescription": "大转盘-抽奖测试1128",
+        "thumbnailImg": "http://uat-uop-wx.opg.cn/_static/images/raffle/20171128162948_856021.jpg",
+        "publishState": "01",
+        "nowDateTimestamp": 1511858029567,
+        "applyBeninTimestamp": 1511857793000,
+        "applyEndTimestamp": 1511944195000,
+        "raffleReminder": null,
+        "raffleRule": "啊的说法",
+        "activitiesBeginTime": null,
+        "activitiesEndTime": null,
+        "prizeCount": null,
+        "passPrompt": "恭喜您，中奖了！蜂蜂已将您的门票快递给了您！如有任何收货问题，可添加蜂蜂个人微信号：opgclub1，在线咨询！\r\n                                      ",
+        "noPassPrompt": "您距离中奖仅有0.01米~不要气馁换个姿势继续吧！更多精彩活动请持续关注OPG Club"
+    },
+    "rafflePrizeInfos": [
+        {
+            "id": "71eb54f5-d416-11e7-88a9-02667449c382",
+            "prizeName": "手机",
+            "sortNumber": 1,
+            "prizeDescribe": "不含添加剂",
+            "prizeImg": "http://uat-uop-wx.opg.cn/_static/images/raffle/20171128163052_804991.jpg"
+        },
+        {
+            "id": "879bed59-d416-11e7-88a9-02667449c382",
+            "prizeName": "手机",
+            "sortNumber": 2,
+            "prizeDescribe": "不含添加剂",
+            "prizeImg": "http://uat-uop-wx.opg.cn/_static/images/raffle/20171128163128_804197.jpg"
+        },
+        {
+            "id": "a4e2b114-d416-11e7-88a9-02667449c382",
+            "prizeName": "手机",
+            "sortNumber": 3,
+            "prizeDescribe": "不含添加剂",
+            "prizeImg": "http://uat-uop-wx.opg.cn/_static/images/raffle/20171128163217_334812.jpg"
+        }
+    ],
+    "raffleMediaInfos": null,
+    "collectionInfo": null,
+    "collectedCount": 0
+}
