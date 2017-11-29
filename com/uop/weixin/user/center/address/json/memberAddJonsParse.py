@@ -9,8 +9,8 @@ from com.uop.util.schemajson import check_rspdata,Validator
 import json
 useraddressScma = {}
 validator = Validator(useraddressScma)
-@check_rspdata(validator)
 
+@check_rspdata(validator)
 #非即开活动提交时，获取地址ID
 def parseMemberDefalutAddJSON(resphome):
     addressjson = resphome.TEXT
