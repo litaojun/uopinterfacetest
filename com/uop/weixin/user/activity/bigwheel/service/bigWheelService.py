@@ -28,6 +28,7 @@ class BigWheelService(object):
         self.memberId = memberId
         self.openid = openid
         self.activitiesId = activitiesId
+        
     #大转盘抽奖动作
     def userSignupActivities(self):
         jsonheart = transUopHttpHears(self.memberId,self.openid)
@@ -37,6 +38,7 @@ class BigWheelService(object):
         userBigWheelResultJson = requests.post(self.userBigWheelurl,
                                              json=userSignupActivitiesjson,
                                              headers = jsonheart)
+    
     #大转盘去领奖动作 
     def userBigWheelAward(self):
         jsonheart = transUopHttpHears(self.memberId,self.openid)
@@ -46,6 +48,7 @@ class BigWheelService(object):
         useraddressid = parseMemberDefalutAddJSON(activityrspjson)
         awardJson = transUserAwardHttpJson(orderId,useraddressid)
         awardResultjson = requests.post(awaredurl,json=awardJson,headers=jsonheart)
+    
     
     def getActivitiesPointByAid(self):
         jsonheart = transUopHttpHears(self.memberId,self.openid)
