@@ -35,7 +35,7 @@ class UserAddressService(object):
     def getUserDefaltAddressJson(self):
         jsonheart = transUopHttpHears(self.memberId,self.openid)
         useraddrspjson = requests.get(url=self.defaultAddress,headers = jsonheart)
-        
+    
     def getUserDefaltAddressID(self):
         addjson = self.getUserDefaltAddressJson()
         useraddressid = parseMemberDefalutAddJSON(addjson) 

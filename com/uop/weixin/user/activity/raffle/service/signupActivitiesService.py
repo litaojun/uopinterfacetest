@@ -27,6 +27,7 @@ class SignUpActivitiesService(object):
         self.memberId = memberId
         self.openid = openid
         self.activitiesId = activitiesId
+        
     def userSignupActivities(self):
         jsonheart = transUopHttpHears(self.memberId,self.openid)
         activityrspjson = requests.get(url=self.defaultAddress,headers = jsonheart)
@@ -43,8 +44,7 @@ class SignUpActivitiesService(object):
         activityrspjson = requests.get(url=self.defaultAddress,headers = jsonheart)
         activitiesPoint = parseActivitiesPointByRspJSON(activityrspjson)
         return activitiesPoint
-    
-        
+
 if __name__ == "__main__":
     a = SignUpActivitiesService("","","")
     b = SignUpActivitiesService("","","")

@@ -8,7 +8,8 @@ Created on 2017
 import requests,json
 from com.uop.util.configurl import memeraddressurl,signUpOpenActUrl,personalCenterUrl,userOrderUrl
 from com.uop.util.jsonTransform import transUopHttpHears
-from com.uop.weixin.user.order.json.paserMemberOrderJson import parseUserPointByRspJSON
+from com.uop.weixin.user.center.order.json.paserMemberOrderJson import parseUserPointByRspJSON
+
 class centerOrderService(object):
     '''
     classdocs
