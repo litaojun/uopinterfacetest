@@ -49,12 +49,19 @@ class BigWheelService(object):
         awardJson = transUserAwardHttpJson(orderId,useraddressid)
         awardResultjson = requests.post(url=awaredurl,json=awardJson,headers=jsonheart)
     
+    #根据大转盘活动ID获取活动详情
+    def getActivitiesByID(self):
+        jsonheart = transUopHttpHears(self.memberId,self.openid)
+        activityrspjson = requests.get(url=self.userBigWheelurl,headers = jsonheart)
+        return activityrspjson
+    
     #获取大转盘活动抽奖所需积分
     def getActivitiesPointByAid(self):
-        jsonheart = transUopHttpHears(self.memberId,self.openid)
-        activityrspjson = requests.get(url=self.defaultAddress,headers = jsonheart)
+        activityrspjson = self.getActivitiesByID()
         activitiesPoint = parseActivitiesPointByRspJSON(activityrspjson)
         return activitiesPoint
+    
+
     
 if __name__ == '__main__':
     pass

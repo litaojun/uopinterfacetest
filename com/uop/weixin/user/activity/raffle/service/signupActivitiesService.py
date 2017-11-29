@@ -16,6 +16,7 @@ class SignUpActivitiesService(object):
     '''
     classdocs
     '''
+    #非即开抽奖活动URL
     userSignupActivitiesurl = signUpOpenActUrl
     memberId = None
     openid = None
@@ -27,7 +28,8 @@ class SignUpActivitiesService(object):
         self.memberId = memberId
         self.openid = openid
         self.activitiesId = activitiesId
-        
+    
+    #非即开抽奖动作
     def userSignupActivities(self):
         jsonheart = transUopHttpHears(self.memberId,self.openid)
         activityrspjson = requests.get(url=self.defaultAddress,headers = jsonheart)
@@ -39,9 +41,15 @@ class SignUpActivitiesService(object):
                                              json=userSignupActivitiesjson,
                                              headers = jsonheart)
     
-    def getActivitiesPointByAid(self):
+    #获取非即开活动详情
+    def getActivitiesById(self):
         jsonheart = transUopHttpHears(self.memberId,self.openid)
         activityrspjson = requests.get(url=self.defaultAddress,headers = jsonheart)
+        return activityrspjson
+        
+    #获取非即开活动所需积分
+    def getActivitiesPointByAid(self):
+        activityrspjson = self.getActivitiesById()
         activitiesPoint = parseActivitiesPointByRspJSON(activityrspjson)
         return activitiesPoint
 
