@@ -7,7 +7,7 @@ from opg.unit.testcaseRunMgr import runTestOneCls
 from opg.unit.parametrized import ParametrizedTestCase
 from com.uop.util.configurl import memeraddressurl,signUpOpenActUrl
 from com.uop.util.jsonTransform import transUopHttpHears
-from com.uop.weixin.user.activity.raffle.json.memberAddJonsParse import parseMemberDefalutAddJSON
+from com.uop.weixin.user.center.address.json.memberAddJonsParse import parseMemberDefalutAddJSON
 from com.uop import transUserSignupActivitiesHttpJson,PersonalActiviesService
 from com.uop.weixin.user.activity.raffle.cpr.userSignActivitiesCpr import checkSignUpActivitiesResultFormat
 import requests

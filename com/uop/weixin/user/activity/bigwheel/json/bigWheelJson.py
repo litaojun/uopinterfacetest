@@ -14,13 +14,13 @@ def transUserBigWheelHttpJson(memberid="",activitiesid = ""):
                          }
     return usersignactivities
 
-
+#中奖后，提交地址
 def transUserAwardHttpJson(orderId='',addressid=''):
     awardjson = {
                  "id":orderId,
                  "addressId":addressid
                 }
-
+#从大转盘抽奖提交后，从返回数据中提取orderId.  
 def paserOrderIdFromJson(respse):
     orderid = respse.get("luckDrawResultInfo").get("orderId")
     return orderid

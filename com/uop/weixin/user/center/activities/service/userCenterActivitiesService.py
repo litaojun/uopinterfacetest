@@ -9,7 +9,7 @@ Created on 2017��11��22��
 import requests
 from com.uop.util.configurl import userActiviesUrl
 from com.uop.util.jsonTransform import transUopHttpHears
-from com.uop.weixin.user.activity.raffle.json.memberAddJonsParse import parseMemberDefalutAddJSON
+from comcom.uop.weixin.user.center.address.json.memberAddJonsParseport parseMemberDefalutAddJSON
 from com.uop.weixin.user.activity.raffle.json.signUpActivitiesJsonParse import transUserSignupActivitiesHttpJson
 from com.uop.weixin.user.activity.raffle.cpr.userSignActivitiesCpr import checkSignUpActivitiesResultFormat
 from com.uop.weixin.user.center.activities.json.centerActivitiesParse import parseActivitiesIdFromJson

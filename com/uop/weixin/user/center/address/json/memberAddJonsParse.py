@@ -16,5 +16,6 @@ def parseMemberDefalutAddJSON(resphome):
     addressjson = resphome.TEXT
     useraddressid = addressjson.get("data").get("id")
     return useraddressid
+
 if __name__ == '__main__':
     pass

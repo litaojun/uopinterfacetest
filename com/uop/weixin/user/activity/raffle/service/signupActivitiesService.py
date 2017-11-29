@@ -8,7 +8,7 @@ Created on 2017
 import requests
 from com.uop.util.configurl import memeraddressurl,signUpOpenActUrl
 from com.uop.util.jsonTransform import transUopHttpHears
-from com.uop.weixin.user.activity.raffle.json.memberAddJonsParse import parseMemberDefalutAddJSON
+from com.uop.weixin.user.center.address.json.memberAddJonsParse import parseMemberDefalutAddJSON
 from com.uop.weixin.user.activity.raffle.json.signUpActivitiesJsonParse import transUserSignupActivitiesHttpJson
 from com.uop.weixin.user.activity.raffle.cpr.userSignActivitiesCpr import checkSignUpActivitiesResultFormat
 from com.uop.weixin.user.activity.raffle import parseActivitiesPointByRspJSON
