@@ -69,6 +69,15 @@ def parseActivitiesIdFromJson(response = None):
         acidls.append(ajson.get("activitiesId"))
     return acidls
 
+def parseMyActivitiesIDFromJson(response = None,activitiesid = None):
+    acid = None
+    activitiesLs = response.get("data")
+    for ajson in activitiesLs:
+        if ajson.get("activitiesId") == activitiesid:
+            acid = ajson
+            break
+    return acid
+
 
 if __name__ == '__main__':
     pass

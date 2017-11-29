@@ -12,7 +12,7 @@ from com.uop.util.jsonTransform import transUopHttpHears
 # from com.uop.weixin.user.center.address.json.memberAddJonsParseport parseMemberDefalutAddJSON
 # from com.uop.weixin.user.activity.raffle.json.signUpActivitiesJsonParse import transUserSignupActivitiesHttpJson
 from com.uop.weixin.user.activity.raffle.cpr.userSignActivitiesCpr import checkSignUpActivitiesResultFormat
-from com.uop.weixin.user.center.activities.json.centerActivitiesParse import parseActivitiesIdFromJson
+from com.uop.weixin.user.center.activities.json.centerActivitiesParse import parseActivitiesIdFromJson,parseMyActivitiesIDFromJson
 import json
 class PersonalActiviesService(object):
     '''
@@ -36,11 +36,18 @@ class PersonalActiviesService(object):
         activityrspjson = requests.post(url=self.userActiviesUrl,json = actjson,headers = jsonheart,verify=False)
         return activityrspjson
     
+    #根据活动ID获取我的活动中信息
+    def getMyActivitiesByID(self,activitiesId = ""):
+        actjson = self.userActivies()
+        myactivities = parseMyActivitiesIDFromJson(actjson,activitiesId)
+        return myactivities
+        
     #得到活动ID列表
     def getActivitiesidList(self):
         actjson = self.userActivies()
         actidls = parseActivitiesIdFromJson(response = json.loads(actjson.text))
         return actidls
+    
     
     #检查活动ID是否存在
     def checkActivitiesExsit(self,activiId = ""):
