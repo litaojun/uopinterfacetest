@@ -1,0 +1,108 @@
+#我的活动列表
+POST /activities-service/raffleResult/getMemberRaffleReCords HTTP/1.1
+{"memberId":"997da560-6de2-4056-8614-e7cd95dd967b","page":1,"limit":10}
+
+{
+    "success": true,
+    "envContext": {
+        "traceInfo": {
+            "traceId": "efeae881-15f8-46c9-8bc5-87e1c265605b",
+            "spanId": "1.0.3"
+        },
+        "webToken": null,
+        "ipAddress": null
+    },
+    "errorContext": null,
+    "data": [
+        {
+            "orderImg": null,
+            "id": "9351d86f-4c21-4579-863f-aeda1084c97c",
+            "memberId": "997da560-6de2-4056-8614-e7cd95dd967b",
+            "activitiesId": "6a9c7678-8a20-44ab-836c-7103c7db55da",
+            "orderTime": 1511577341000,
+            "prizeState": "01",
+            "dataType": "00",
+            "orderId": "d47b5547-b465-43c9-8e81-04782824c227",
+            "activitiesTitle": null,
+            "lotteryType": "00",
+            "prizeImg": "http://dev-uop-wx.opg.cn/_static/images/raffle/20171124181120_538687.jpg",
+            "prizeName": "66",
+            "activitiesAddress": "地点主办",
+            "joinNum": 6,
+            "address": false,
+            "title": "zx非即开"
+        },
+        {
+            "orderImg": "http://dev-uop-wx.opg.cn/_static/images/raffle/20171121111440_257506.jpg",
+            "id": "4237ee61-d0e1-4bb2-b030-9eb6348a749c",
+            "memberId": "997da560-6de2-4056-8614-e7cd95dd967b",
+            "activitiesId": "e9b5f4f3-a9a7-474d-a04c-070bdcc61d52",
+            "orderTime": 1511350030000,
+            "prizeState": "01",
+            "dataType": "00",
+            "orderId": "cb91a1cf-b1dc-49c2-9088-12f2815569ef",
+            "activitiesTitle": null,
+            "lotteryType": "00",
+            "prizeImg": "http://dev-uop-wx.opg.cn/_static/images/raffle/20171121111349_294376.jpg",
+            "prizeName": "曹华楠 刮刮乐测试1",
+            "activitiesAddress": "曹华楠 刮刮乐测试1 低点",
+            "joinNum": 4,
+            "address": false,
+            "title": "曹华楠 刮刮乐测试1"
+        },
+        {
+            "orderImg": "http://dev-uop-wx.opg.cn/_static/images/raffle/20171121103547_413371.jpg",
+            "id": "5da6dd2c-36ca-4ad6-81e0-f6b2189f3df1",
+            "memberId": "997da560-6de2-4056-8614-e7cd95dd967b",
+            "activitiesId": "8754fe84-8e78-4a95-a224-a8a6d7b9768f",
+            "orderTime": 1511317297000,
+            "prizeState": "01",
+            "dataType": "00",
+            "orderId": "1b37b8e3-4554-44b4-8ea6-02a1a7c67b6c",
+            "activitiesTitle": null,
+            "lotteryType": "00",
+            "prizeImg": "http://dev-uop-wx.opg.cn/_static/images/raffle/20171121105708_966181.jpg",
+            "prizeName": "文字",
+            "activitiesAddress": "天津市",
+            "joinNum": 6,
+            "address": true,
+            "title": "大转盘活动"
+        },
+        {
+            "orderImg": null,
+            "id": "763d3534-e26c-43a2-ae7c-7d96f07b83f2",
+            "memberId": "997da560-6de2-4056-8614-e7cd95dd967b",
+            "activitiesId": "84af12a7-7208-4ebe-a8bd-d78d21fcf2e8",
+            "orderTime": 1511177875000,
+            "prizeState": "00",
+            "dataType": "00",
+            "orderId": null,
+            "activitiesTitle": null,
+            "lotteryType": "01",
+            "prizeImg": "http://uat-uop-wx.opg.cn/_static/images/raffle/20171108180114_578686.jpg",
+            "prizeName": null,
+            "activitiesAddress": "万航渡路282号",
+            "joinNum": 7,
+            "address": false,
+            "title": "非即开测试1108"
+        },
+        {
+            "orderImg": null,
+            "id": "1c5fd6ab-ae91-429a-b5d9-363f4cd46589",
+            "memberId": "997da560-6de2-4056-8614-e7cd95dd967b",
+            "activitiesId": "73b73bd0-8a1f-4260-a4a1-0e623f65679a",
+            "orderTime": 1511169392000,
+            "prizeState": "02",
+            "dataType": "00",
+            "orderId": null,
+            "activitiesTitle": null,
+            "lotteryType": "01",
+            "prizeImg": "http://uat-uop-wx.opg.cn/_static/images/raffle/20171106115513_406753.jpg",
+            "prizeName": "苹果手机",
+            "activitiesAddress": "万航渡路282号",
+            "joinNum": 9,
+            "address": false,
+            "title": "非即开测试1106回归-李涛军"
+        }
+    ]
+}

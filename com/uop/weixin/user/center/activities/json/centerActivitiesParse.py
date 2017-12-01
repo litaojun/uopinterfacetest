@@ -78,6 +78,9 @@ def parseMyActivitiesIDFromJson(response = None,activitiesid = None):
             break
     return acid
 
+def parseActivitiesStatus(response):
+    status = response.get("prizeState")
+    return status
 
 if __name__ == '__main__':
     pass

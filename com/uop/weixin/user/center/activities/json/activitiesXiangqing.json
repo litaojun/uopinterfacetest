@@ -1,0 +1,62 @@
+#从活动列表中进入活动详情（对应列表叶中的orderId=d47b5547-b465-43c9-8e81-04782824c227）
+GET /order-service/orders/d47b5547-b465-43c9-8e81-04782824c227 HTTP/1.1
+
+{
+    "code": "000000",
+    "message": "成功",
+    "data": {
+        "id": "d47b5547-b465-43c9-8e81-04782824c227",
+        "orderNo": "20171125103541054",
+        "memberId": "997da560-6de2-4056-8614-e7cd95dd967b",
+        "orderPrice": null,
+        "payPrice": null,
+        "createTime": 1511577341000,
+        "updateTime": 1511577359000,
+        "payTime": 1511577341000,
+        "deliveryTime": null,
+        "finishTime": null,
+        "orderStatus": "12",
+        "memberMsg": null,
+        "receiveAddressId": "77b7914a-cdd3-11e7-aa44-02cab2901bce",
+        "receiveAddress": "李涛军,18916899938,北京市市辖区东城区今年",
+        "orderType": "03",
+        "remark": null,
+        "details": [
+            {
+                "id": "562a38bd-553a-4505-93d1-89ec72c2f452",
+                "orderId": "d47b5547-b465-43c9-8e81-04782824c227",
+                "itemId": "6a9c7678-8a20-44ab-836c-7103c7db55da",
+                "buyCount": 1,
+                "itemTitle": "zx非即开",
+                "itemPrice": null,
+                "itemOriginalPrice": null,
+                "itemCostPrice": null,
+                "skuId": "60dfcf73-d17b-41d7-9128-6cd8f3f4493c",
+                "picPath": "http://dev-uop-wx.opg.cn/_static/images/raffle/20171123122821_420167.jpg",
+                "skuDesc": null,
+                "distribution": null,
+                "activityAddress": null,
+                "point": 0,
+                "memberId": null,
+                "prizeId": "09d56b26-af62-4187-beab-43e6c6ee1d80",
+                "prizeTitle": "66",
+                "prizePic": "http://dev-uop-wx.opg.cn/_static/images/raffle/20171124181120_538687.jpg",
+                "raffleResultId": "9351d86f-4c21-4579-863f-aeda1084c97c"
+            }
+        ],
+        "memberName": null,
+        "phone": null,
+        "createTimeStr": "2017-11-25 10:35:41",
+        "expressCompany": null,
+        "expressNo": null,
+        "ticketNo": null,
+        "activityTimeDesc": null,
+        "activityAddress": null,
+        "updateTimeStr": "2017-11-25 10:35:59",
+        "payTimeStr": "2017-11-25 10:35:41",
+        "deliveryTimeStr": null,
+        "payExpiryTimeStr": "2017-11-25 11:05",
+        "deliveryType": "01",
+        "totalPoints": 0
+    }
+}

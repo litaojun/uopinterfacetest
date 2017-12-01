@@ -20,5 +20,7 @@ userOrderUrl = "https://uat-uop-api.opg.cn/order-service/orders?memberId=997da56
 #大转盘中奖后提交地址
 awaredurl = "https://uat-uop-api.opg.cn/order-service/orders/lottery/address"
 orderLuckAddress=""
+#从我的活动列表中，选择一个活动进入详情
+myactivitiesurl="https://uat-uop-api.opg.cn/order-service/orders/d47b5547-b465-43c9-8e81-04782824c227"
 if __name__ == '__main__':
     pass
