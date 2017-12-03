@@ -1,0 +1,14 @@
+eclipse.preferences.version=1
+encoding//com/uop/stu/decorator/a.py=utf-8
+encoding//com/uop/stu/decorator/b.py=utf-8
+encoding//com/uop/stu/decorator/c.py=utf-8
+encoding//com/uop/stu/decorator/d.py=utf-8
+encoding//com/uop/stu/decorator/e.py=utf-8
+encoding//com/uop/util/jsonschemaTest.py=utf-8
+encoding//com/uop/util/schemajson.py=utf-8
+encoding//com/uop/weixin/user/activity/raffle/cpr/userSignActivitiesCpr.py=utf-8
+encoding//com/uop/weixin/user/activity/raffle/json/signUpActivitiesJsonParse.py=utf-8
+encoding//com/uop/weixin/user/activity/raffle/service/signupActivitiesService.py=utf-8
+encoding//com/uop/weixin/user/center/activities/json/centerActivitiesParse.py=utf-8
+encoding//com/uop/weixin/user/center/activities/service/userCenterActivitiesService.py=utf-8
+encoding//com/uop/weixin/user/raffle/json/activitiesjson.py=utf-8
