@@ -40,7 +40,6 @@ def check_rspdata(validator):
             jsondata = kwargs["response"]
             #LOG.debug("validating input %s with %s", data, validator.name)
             validator.validate(jsondata)
-            ##这里看起来有个bug，应该是f(*args, **kwargs),未测试
             #lsstr = f()
             #print lsstr
             return f(jsondata)

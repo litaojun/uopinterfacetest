@@ -20,6 +20,8 @@ def transUserAwardHttpJson(orderId='',addressid=''):
                  "id":orderId,
                  "addressId":addressid
                 }
+    return awardjson
+    
 #从大转盘抽奖提交后，从返回数据中提取orderId.  
 def paserOrderIdFromJson(respse):
     orderid = respse.get("luckDrawResultInfo").get("orderId")

@@ -46,11 +46,15 @@ def fib():
         prev, curr = curr, curr + prev
 def testfib():
     f = fib()
+    print "type(fib)=%s" % f
+    print "f.next()=%s" % f.next()
     a = list(islice(f, 0, 10))
+    for i in f: 
+        print i
     print str(a)
 if __name__ == '__main__':
     #test()
     testfib()
-    t = Fib(100)
-    lt = [x for x in t ]
-    print str(lt)
+    #t = Fib(100)
+    #lt = [x for x in t ]
+    #print str(lt)
