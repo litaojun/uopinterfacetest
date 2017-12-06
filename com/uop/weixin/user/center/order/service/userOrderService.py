@@ -8,7 +8,7 @@ Created on 2017
 import requests,json
 from com.uop.util.configurl import memeraddressurl,signUpOpenActUrl,personalCenterUrl,userOrderUrl
 from com.uop.util.jsonTransform import transUopHttpHears
-from com.uop.weixin.user.center.order.json.paserMemberOrderJson import parseUserPointByRspJSON
+from com.uop.weixin.user.center.order.json.paserMemberOrderJson import parseUseOrderListByRspJSON
 
 class centerOrderService(object):
     '''
@@ -22,13 +22,31 @@ class centerOrderService(object):
         self.openid = openid
         self.userOrderUrl = userOrderUrl
         
+    #根据订单状态查询订单列表
     def userOrderListByStatus(self,status= ""):
         jsonheart = transUopHttpHears(self.memberId,self.openid)
+        self.userOrderUrl = self.userOrderUrl % status
         print "jsonheart=%s,personalCenterUrl=%s" % (jsonheart,self.userOrderUrl)
         orderlistrspjson = requests.get(url=self.userOrderUrl,headers = jsonheart,verify=False)
-        orderlsjson = parseUserPointByRspJSON(response = json.loads(orderlistrspjson.text))
-        return orderlsjson
+        return orderlistrspjson
     
+    #根据订单列表解析出有效字段（orderStatus,orderId,buyCount,picPath,point,itemPrice）
+    def filterFildOrderList(self,status):
+        orderlistrspjson = self.userOrderListByStatus(status)
+        orderlsjson = parseUseOrderListByRspJSON(response = json.loads(orderlistrspjson.text))
+        
+    #检查订单ID是否存在
+    def checkOrderStatusExsit(self,status,orderid):
+        sign = False
+        orderlistrspjson = self.userOrderListByStatus(status)
+        for order in parseUseOrderListByRspJSON(response = json.loads(orderlistrspjson.text)):
+            if orderid == order[1] and status ==order[0]:
+                sign = True
+                break
+        return sign
+        orderlsjson = self.userOrderListByStatus(status)
+        
+        
     def setUserOrderUrl(self,orderurl):
         self.userOrderUrl = orderurl
         

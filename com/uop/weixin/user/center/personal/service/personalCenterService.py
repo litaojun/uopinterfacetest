@@ -26,6 +26,7 @@ class MemberPerCenterService(object):
         activityrspjson = requests.get(url=self.personalCenterUrl,headers = jsonheart,verify=False)
         return activityrspjson
         
+    #获取个人积分
     def getPersonalSign(self):
         #usertotalPoint = 0
         usersignjson = self.personalCenter()

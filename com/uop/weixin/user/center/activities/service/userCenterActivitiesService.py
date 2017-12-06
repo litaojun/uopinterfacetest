@@ -63,6 +63,7 @@ class PersonalActiviesService(object):
             sign = True
         return sign
     
+    
     def setUserActiviesUrl(self,url):
         self.userActiviesUrl = url
         

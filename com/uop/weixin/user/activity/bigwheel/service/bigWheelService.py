@@ -36,8 +36,8 @@ class BigWheelService(object):
         userSignupActivitiesjson = transUserBigWheelHttpJson(self.memberId,
                                                              self.activitiesId)
         userBigWheelResultJson = requests.post(self.userBigWheelurl,
-                                             json=userSignupActivitiesjson,
-                                             headers = jsonheart)
+                                                 json=userSignupActivitiesjson,
+                                                 headers = jsonheart)
     
     #大转盘去领奖动作 
     def userBigWheelAward(self):
@@ -48,6 +48,7 @@ class BigWheelService(object):
         useraddressid = parseMemberDefalutAddJSON(useraddrspjson)
         awardJson = transUserAwardHttpJson(orderId,useraddressid)
         awardResultjson = requests.post(url=awaredurl,json=awardJson,headers=jsonheart)
+        return awardResultjson
     
     #根据大转盘活动ID获取活动详情
     def getActivitiesByID(self):
@@ -60,8 +61,6 @@ class BigWheelService(object):
         activityrspjson = self.getActivitiesByID()
         activitiesPoint = parseActivitiesPointByRspJSON(activityrspjson)
         return activitiesPoint
-    
-
     
 if __name__ == '__main__':
     pass

@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
+# -*- coding:utf-8 -*-
 '''
 Created on 2017
 
@@ -18,7 +18,7 @@ class UserAddressService(object):
     '''
     classdocs
     '''
-    #获取用户默认地址
+    #获取用户默'认地址
     userDefaultAdd = memeraddressurl
     #获取用例地址列表
     #新增地址
@@ -38,7 +38,7 @@ class UserAddressService(object):
         useraddrspjson = requests.get(url=self.defaultAddress,headers = jsonheart)
         return useraddrspjson
     
-    #解析活动地址ID
+    #解析默认址地址ID
     def getUserDefaltAddressID(self):
         addjson = self.getUserDefaltAddressJson()
         useraddressid = parseMemberDefalutAddJSON(addjson) 
