@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 '''
-Created on 2017��11��22��
+Created on 2017
 
 @author: li.taojun
 '''
@@ -37,9 +37,9 @@ class PersonalActiviesService(object):
         return activityrspjson
     
     #根据活动ID获取我的活动中信息
-    def getMyActivitiesByID(self,activitiesId = ""):
-        actjson = self.userActivies()
-        myactivities = parseMyActivitiesIDFromJson(actjson,activitiesId)
+    def getMyActivitiesByID(self,activitiesId = "",activityrspjson):
+#       actjson = self.userActivies()
+        myactivities = parseMyActivitiesIDFromJson(activityrspjson,activitiesId)
         return myactivities
     
     #获取活动状态

@@ -14,6 +14,7 @@ memeraddressurl = "http://uat-uop-wx.opg.cn/member-service/address/memberId"
 signUpOpenActUrl = "http://uat-uop-wx.opg.cn/activities-service/raffleResult/signUpNonOpenActivities"
 #大转盘抽奖
 bigwheelurl = "http://uat-uop-wx.opg.cn/activities-service/raffleResult/luckDraw"
+#个人中心页面
 personalCenterUrl = "http://uat-uop-wx.opg.cn/member-service/members/personalCenter"
 
 userActiviesUrl = "http://uat-uop-wx.opg.cn/activities-service/raffleResult/getMemberRaffleReCords"

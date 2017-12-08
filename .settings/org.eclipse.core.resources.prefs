@@ -11,6 +11,7 @@ encoding//com/uop/util/httpRequest.py=utf-8
 encoding//com/uop/util/jsonTransform.py=utf-8
 encoding//com/uop/util/jsonschemaTest.py=utf-8
 encoding//com/uop/util/schemajson.py=utf-8
+encoding//com/uop/util/timeTool.py=utf-8
 encoding//com/uop/weixin/homepage/test/homePageTest.py=utf-8
 encoding//com/uop/weixin/user/activity/bigwheel/json/bigWheelJson.py=utf-8
 encoding//com/uop/weixin/user/activity/bigwheel/service/bigWheelService.py=utf-8

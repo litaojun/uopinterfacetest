@@ -19,8 +19,9 @@ class UserAddressService(object):
     classdocs
     '''
     #获取用户默'认地址
-    userDefaultAdd = memeraddressurl
+    defaultAddress = memeraddressurl
     #获取用例地址列表
+    
     #新增地址
     #删除地址
     memberId = None
