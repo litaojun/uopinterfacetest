@@ -32,7 +32,7 @@ class UserAddressService(object):
         self.memberId = memberId
         self.openid = openid
     
-    #获取默认地址
+    #获取默认地址请求
     def getUserDefaltAddressJson(self):
         jsonheart = transUopHttpHears(self.memberId,self.openid)
         useraddrspjson = requests.get(url=self.defaultAddress,headers = jsonheart)
