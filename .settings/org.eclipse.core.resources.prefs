@@ -8,6 +8,7 @@ encoding//com/uop/stu/iterator/a.py=utf-8
 encoding//com/uop/util/jsonschemaTest.py=utf-8
 encoding//com/uop/util/schemajson.py=utf-8
 encoding//com/uop/weixin/user/activity/raffle/cpr/userSignActivitiesCpr.py=utf-8
+encoding//com/uop/weixin/user/activity/raffle/json/activitiesInfoParse.py=utf-8
 encoding//com/uop/weixin/user/activity/raffle/json/signUpActivitiesJsonParse.py=utf-8
 encoding//com/uop/weixin/user/activity/raffle/service/signupActivitiesService.py=utf-8
 encoding//com/uop/weixin/user/center/activities/json/centerActivitiesParse.py=utf-8

@@ -16,6 +16,8 @@ def decorator(fun):
         print runtime
     return wrapper
 
+def a():
+    pass
 @decorator
 def do_something():
     for i in range(1000000):

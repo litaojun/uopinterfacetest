@@ -8,6 +8,7 @@ Created on 201
 from com.uop.util.schemajson import check_rspdata,Validator
 import json
 
+
 activitiesInfoScma = {
                    "type":"object",
                    "properties":
