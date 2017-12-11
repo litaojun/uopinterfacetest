@@ -11,7 +11,8 @@ from com.uop.util.jsonTransform import transUopHttpHears
 from com.uop.weixin.user.center.address.json.memberAddJonsParse import parseMemberDefalutAddJSON
 from com.uop.weixin.user.activity.raffle.json.signUpActivitiesJsonParse import transUserSignupActivitiesHttpJson
 from com.uop.weixin.user.activity.raffle.cpr.userSignActivitiesCpr import checkSignUpActivitiesResultFormat
-from com.uop.weixin.user.activity.raffle import parseActivitiesPointByRspJSON
+from com.uop.weixin.user.activity.raffle.json.activitiesInfoParse import parseActivitiesPointByRspJSON
+
 class SignUpActivitiesService(object):
     '''
     classdocs
@@ -44,6 +45,9 @@ class SignUpActivitiesService(object):
     
     #非即开抽奖中奖后获取订单,code信息
     def getOrderIdBySignUpResultJson(self,userSignUpResultJson):
+        '''
+          userSignUpResultJson 
+        '''
         pass
     
     #非即开抽奖未中奖，获取code信息

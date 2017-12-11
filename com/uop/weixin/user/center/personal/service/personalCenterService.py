@@ -22,7 +22,7 @@ class MemberPerCenterService(object):
         self.personalCenterUrl = personalCenterUrl
     def personalCenter(self):
         jsonheart = transUopHttpHears(self.memberId,self.openid)
-        print "jsonheart=%s,personalCenterUrl=%s" % (jsonheart,self.personalCenterUrl)
+        print("jsonheart=%s,personalCenterUrl=%s" % (jsonheart,self.personalCenterUrl))
         activityrspjson = requests.get(url=self.personalCenterUrl,headers = jsonheart,verify=False)
         return activityrspjson
         
@@ -30,10 +30,10 @@ class MemberPerCenterService(object):
     def getPersonalSign(self):
         #usertotalPoint = 0
         usersignjson = self.personalCenter()
-        print "usersignjson=%s" % usersignjson.text
+        print("usersignjson=%s" % usersignjson.text)
         usertotalPoint = parseUserPointByRspJSON(response = json.loads(usersignjson.text))
         return usertotalPoint
-
+    
     def setPersonalCenterUrl(self,centerurl):
         self.personalCenterUrl = centerurl
     
@@ -41,5 +41,5 @@ if __name__ == "__main__":
     a = MemberPerCenterService("997da560-6de2-4056-8614-e7cd95dd967b","ovQBPxGwi5RUfDoZDc-xep7EraEI")
     a.setPersonalCenterUrl("https://dev-uop-api.opg.cn/member-service/members/personalCenter")
     userpoint = a.getPersonalSign()
-    print "userpoint=%s" % userpoint
+    print("userpoint=%s" % userpoint)
         

@@ -6,7 +6,7 @@ Created on 2017
 @author: li.taojun
 '''
 from com.uop.util.schemajson import check_rspdata,Validator
-from com.uop.weixin.user.activity import transUserSignupActivitiesHttpJson
+#from com.uop.weixin.user.activity import transUserSignupActivitiesHttpJson
 import json
 userCenterScma = {
                         "type":"object",

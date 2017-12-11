@@ -13,7 +13,7 @@ from com.uop.weixin.user.center.address.json.memberAddJonsParse import parseMemb
 from com.uop.weixin.user.activity.bigwheel.json.bigWheelJson import transUserBigWheelHttpJson,paserOrderIdFromJson,transUserAwardHttpJson
 from com.uop.weixin.user.activity.raffle.cpr.userSignActivitiesCpr import checkSignUpActivitiesResultFormat
 from com.uop.weixin.user.activity.raffle import parseActivitiesPointByRspJSON
-from com.uop.weixin.user.raffle.cpr.httpsTest import hearder
+#from com.uop.weixin.user.raffle.cpr.httpsTest import hearder
 class UserAddressService(object):
     '''
     classdocs

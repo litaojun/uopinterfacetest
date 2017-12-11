@@ -94,4 +94,4 @@ if __name__ == '__main__':
     #checkSchema()
     #checkSchemaFormat()
     a()
-    print "a"
+    print("a")

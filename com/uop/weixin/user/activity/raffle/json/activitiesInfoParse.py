@@ -36,7 +36,7 @@ validator = Validator(activitiesInfoScma)
 @check_rspdata(validator)
 def parseActivitiesPointByRspJSON(response=None):
     #addressjson = response.TEXT\
-    print "response=%s" % str(response)
+    print("response=%s" % str(response))
     activitiesPoint = response.get("raffleBaseInfo").get("point")
     return activitiesPoint
 

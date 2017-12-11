@@ -1,11 +1,14 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 '''
-Created on 2017ï¿½ï¿½11ï¿½ï¿½20ï¿½ï¿½
+Created on 2017é”Ÿæ–¤æ‹·11é”Ÿæ–¤æ‹·20é”Ÿæ–¤æ‹·
 
 @author: li.taojun
 '''
 from opg.unit.testcaseRunMgr import runTestOneCls
 from opg.unit.parametrized import ParametrizedTestCase
 from com.uop.util.configurl import memeraddressurl,signUpOpenActUrl
+#from ......util.configurl import memeraddressurl,signUpOpenActUrl
 from com.uop.util.jsonTransform import transUopHttpHears
 from com.uop.weixin.user.center.address.json.memberAddJonsParse import parseMemberDefalutAddJSON
 from com.uop import transUserSignupActivitiesHttpJson,PersonalActiviesService
@@ -35,19 +38,19 @@ class SignUpActivities(ParametrizedTestCase):
           pass
       
       def userSignUpActivities(self):
-          #ºóÆÚ³é½±Ç°µÄ¸öÈË×Ü»ı·Ö
+          #åæœŸæŠ½å¥–å‰çš„ä¸ªäººæ€»ç§¯åˆ†
           preuserTotalPoint = self.personalCenterService.getPersonalSign()
-          #»ñÈ¡³é½±¸Ã»î¶¯ËùĞè»ı·Ö
+          #è·å–æŠ½å¥–è¯¥æ´»åŠ¨æ‰€éœ€ç§¯åˆ†
           activitiesPoint = self.signupservice.getActivitiesPointByAid()
-          #·Ç¼´¿ª»î¶¯³é½±Õı³£Ìá½»
+          #éå³å¼€æ´»åŠ¨æŠ½å¥–æ­£å¸¸æäº¤
           userSignUpResultJson = self.signupservice.userSignupActivities()
-          #¼ì²é·µ»Ø¸ñÊ½¼°Ïà¹ØÊı¾İ
+          #æ£€æŸ¥è¿”å›æ ¼å¼åŠç›¸å…³æ•°æ®
           self.assertTrue(checkSignUpActivitiesResultFormat(userSignUpResultJson))
-          #»ñÈ¡³é½±ºó¸öÈË×Ü»ı·Ö
+          #è·å–æŠ½å¥–åä¸ªäººæ€»ç§¯åˆ†
           afterUserTotalPoint = self.personalCenterService.getPersonalSign()
-          #¼ì²é³é½±ºóÓÃ»§»ı·ÖÊÇ·ñ¼õÉÙÕıÈ· 
+          #æ£€æŸ¥æŠ½å¥–åç”¨æˆ·ç§¯åˆ†æ˜¯å¦å‡å°‘æ­£ç¡® 
           self.assertTrue(preuserTotalPoint-activitiesPoint == afterUserTotalPoint)
-          #¼ì²éÎÒµÄ»î¶¯ÁĞ±íÊÇ·ñ´æÔÚ¸Ã»î¶¯
+          #æ£€æŸ¥æˆ‘çš„æ´»åŠ¨åˆ—è¡¨æ˜¯å¦å­˜åœ¨è¯¥æ´»åŠ¨
           self.assertTrue(self.personalActiviesSer.checkActivitiesExsit(self.inputdata['activitiesId']))
           
       def tearDown(self):

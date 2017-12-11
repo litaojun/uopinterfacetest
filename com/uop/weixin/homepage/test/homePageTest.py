@@ -35,7 +35,7 @@ class homepages(ParametrizedTestCase):
         homecontent = http_get(homepageurl)
         inputdata =  self.getInputData()
         #inputdata =  unicode(inputdata, "utf-8") 
-        print inputdata
+        print(inputdata)
         homeresp = http_post(homepageurl,param=inputdata)
         self.assertTrue(1>2,inputdata)
        
@@ -43,7 +43,7 @@ class homepages(ParametrizedTestCase):
         homecontent = http_get(homepageurl)
         inputdata =  self.getInputData()
         #inputdata =  unicode(inputdata, "utf-8")
-        print inputdata
+        print(inputdata)
         homeresp = http_post(homepageurl,param=inputdata)
         self.assertTrue(1>2,inputdata)
         

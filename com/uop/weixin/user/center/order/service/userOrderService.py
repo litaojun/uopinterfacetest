@@ -26,7 +26,7 @@ class centerOrderService(object):
     def userOrderListByStatus(self,status= ""):
         jsonheart = transUopHttpHears(self.memberId,self.openid)
         self.userOrderUrl = self.userOrderUrl % status
-        print "jsonheart=%s,personalCenterUrl=%s" % (jsonheart,self.userOrderUrl)
+        print("jsonheart=%s,personalCenterUrl=%s" % (jsonheart,self.userOrderUrl))
         orderlistrspjson = requests.get(url=self.userOrderUrl,headers = jsonheart,verify=False)
         return orderlistrspjson
     
@@ -54,6 +54,6 @@ if __name__ == "__main__":
         a = centerOrderService("997da560-6de2-4056-8614-e7cd95dd967b","ovQBPxGwi5RUfDoZDc-xep7EraEI")
         a.setUserOrderUrl("https://dev-uop-api.opg.cn/order-service/orders?memberId=997da560-6de2-4056-8614-e7cd95dd967b&orderStatus=&page=1&pageSize=10")
         orderls = a.userOrderListByStatus()
-        print "orderls=%s" % (orderls)
+        print("orderls=%s" % (orderls))
         
     

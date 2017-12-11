@@ -37,7 +37,7 @@ class PersonalActiviesService(object):
         return activityrspjson
     
     #根据活动ID获取我的活动中信息
-    def getMyActivitiesByID(self,activitiesId = "",activityrspjson):
+    def getMyActivitiesByID(self,activitiesId = "",activityrspjson=""):
 #       actjson = self.userActivies()
         myactivities = parseMyActivitiesIDFromJson(activityrspjson,activitiesId)
         return myactivities
@@ -72,5 +72,5 @@ if __name__ == '__main__':
     a = PersonalActiviesService('997da560-6de2-4056-8614-e7cd95dd967b','ovQBPxGwi5RUfDoZDc-xep7EraEI')
     a.setUserActiviesUrl('https://dev-uop-api.opg.cn/activities-service/raffleResult/getMemberRaffleReCords')
     acils = a.getActivitiesidList()
-    print acils
+    print(acils)
     

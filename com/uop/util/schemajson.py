@@ -26,7 +26,10 @@ class Validator(object):
         except ValidationError as ex:
             #OG.exception(ex.message)
             # TODO(ramineni):raise valence specific exception
-            raise Exception(ex.message)
+            print("type="+str(type(ex)))
+            print("dir="+str(dir(ex)))
+            print("ex.message="+str(type(ex.message)))
+            raise Exception(str(ex.message))
 
 
 ##validator.py
@@ -34,7 +37,7 @@ def check_rspdata(validator):
     def decorated(f):
         @wraps(f)
         def wrapper(*args, **kwargs):
-            print "kwargs="+str(kwargs)
+            print ("kwargs="+str(kwargs))
             #print "litaojun11111"
             #jsondata = json.loads(kwargs["response"])
             jsondata = kwargs["response"]
@@ -66,5 +69,10 @@ def a(response = None):
     #print "litaojun00000"
     return "litaojun"
 if __name__ == '__main__':
-    jsond = {"name" : "Eggs", "price" : 34.99,'list':[1,5],'address':'bj-jiuxianqiao'}
+    jsond = {
+                  "name":"Eggs",
+                  "price":34.99,
+                  "list":[1,5],
+                  "address":"bj-jiuxianqiao"
+             }
     a(response=json.dumps(jsond))

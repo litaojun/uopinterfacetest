@@ -32,12 +32,14 @@ userCenterScma = {
                                  }
                    }
 validator = Validator(userCenterScma)
+
 #
 @check_rspdata(validator)
 def parseUserPointByRspJSON(response=None):
     #addressjson = response.TEXT\
-    print "response=%s" % str(response)
+    print("response=%s" % str(response))
     userPoint = response.get("data").get("totalPoints")
     return userPoint
+
 if __name__ == '__main__':
     pass

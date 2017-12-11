@@ -105,7 +105,7 @@ validator = Validator(userCenterScma)
 @check_rspdata(validator)
 def parseUseOrderListByRspJSON(response=None):
     #addressjson = response.TEXT\
-    print "response=%s" % str(response)
+    print("response=%s" % str(response))
     orderlist = response.get("data").get("data")
     for order in orderlist:
         orderStatus,orderId,buyCount,picPath,point,itemPrice = yield   order.get("orderStatus"),\
