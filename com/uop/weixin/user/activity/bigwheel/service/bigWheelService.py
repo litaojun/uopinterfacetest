@@ -36,19 +36,30 @@ class BigWheelService(object):
         userSignupActivitiesjson = transUserBigWheelHttpJson(self.memberId,
                                                              self.activitiesId)
         userBigWheelResultJson = requests.post(self.userBigWheelurl,
-                                             json=userSignupActivitiesjson,
-                                             headers = jsonheart)
+                                                 json=userSignupActivitiesjson,
+                                                 headers = jsonheart)
+        return userBigWheelResultJson
     
-    #大转盘去领奖动作 
-    def userBigWheelAward(self):
-        jsonheart = transUopHttpHears(self.memberId,self.openid)
+    #获取大转盘抽奖中奖后相关信息(订单ID,返回码）
+    def getOrderIdFromBigWheelResultJson(self,bigWheelResultJson):
         userBigResultJson = self.userSignupActivities()
         orderId = paserOrderIdFromJson(respse = userBigResultJson)
+        return orderId
+    
+    #获取大转盘抽奖未中奖(返回码）
+    def getRetcodeFromBigWheelResultJson(self,bigWheelResultJson):
+        pass 
+    
+    
+    #大转盘去领奖动作 
+    def userBigWheelAward(self,orderId):
+        jsonheart = transUopHttpHears(self.memberId,self.openid)
         useraddrspjson = requests.get(url=self.defaultAddress,headers = jsonheart)
         useraddressid = parseMemberDefalutAddJSON(useraddrspjson)
         awardJson = transUserAwardHttpJson(orderId,useraddressid)
         awardResultjson = requests.post(url=awaredurl,json=awardJson,headers=jsonheart)
-    
+        return awardResultjson
+     
     #根据大转盘活动ID获取活动详情
     def getActivitiesByID(self):
         jsonheart = transUopHttpHears(self.memberId,self.openid)
@@ -60,8 +71,6 @@ class BigWheelService(object):
         activityrspjson = self.getActivitiesByID()
         activitiesPoint = parseActivitiesPointByRspJSON(activityrspjson)
         return activitiesPoint
-    
-
     
 if __name__ == '__main__':
     pass

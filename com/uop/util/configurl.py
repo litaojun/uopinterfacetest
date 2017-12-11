@@ -14,9 +14,12 @@ memeraddressurl = "http://uat-uop-wx.opg.cn/member-service/address/memberId"
 signUpOpenActUrl = "http://uat-uop-wx.opg.cn/activities-service/raffleResult/signUpNonOpenActivities"
 #大转盘抽奖
 bigwheelurl = "http://uat-uop-wx.opg.cn/activities-service/raffleResult/luckDraw"
+#个人中心页面
 personalCenterUrl = "http://uat-uop-wx.opg.cn/member-service/members/personalCenter"
+
 userActiviesUrl = "http://uat-uop-wx.opg.cn/activities-service/raffleResult/getMemberRaffleReCords"
-userOrderUrl = "https://uat-uop-api.opg.cn/order-service/orders?memberId=997da560-6de2-4056-8614-e7cd95dd967b&orderStatus=&page=1&pageSize=10"
+#订单列表查询
+userOrderUrl = "https://uat-uop-api.opg.cn/order-service/orders?memberId=997da560-6de2-4056-8614-e7cd95dd967b&orderStatus=%s&page=1&pageSize=10"
 #大转盘中奖后提交地址
 awaredurl = "https://uat-uop-api.opg.cn/order-service/orders/lottery/address"
 orderLuckAddress=""

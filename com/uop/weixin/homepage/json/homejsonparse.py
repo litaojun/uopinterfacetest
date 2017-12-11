@@ -1,16 +1,18 @@
+#!/usr/bin/env python
+# -*- coding:utf-8 -*-
 '''
-Created on 2017年11月20日
+Created on 2017
 
 @author: li.taojun
 '''
 import json
-#解析第一层JSON的KEY
+#
 def parsejsonOne(resphome):
     rspkey = ['code','data','message']
     actkey = []
     resphomepage = resphome.text
     if resphomepage is not None and resphomepage != "":
-          print  "resphomepage = " +resphomepage
+          print("resphomepage = " +resphomepage)
           homejson = json.loads(resphomepage)
           actkey = homejson.keys()
           #if set(hoemkeys) == set(rspkey):

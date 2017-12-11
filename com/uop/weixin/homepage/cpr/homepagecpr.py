@@ -37,7 +37,7 @@ def checkHomepageFormat(resphome):
                   }
     resphomepage = resphome.text
     if resphomepage is not None and resphomepage != "":
-          print  "resphomepage = " +resphomepage
+          print("resphomepage = " +resphomepage)
           homejson = json.loads(resphomepage)
           hoemkeys = homejson.keys()
           if set(hoemkeys) == set(rspkey):
@@ -81,16 +81,16 @@ if __name__ == '__main__':
     b = ['code','data','message',(1,2,3),t2]
     c = ['data','code','message',(1,2,3),t1]
     x = {t1:"aaa"}
-    print x[t1]
+    print( x[t1])
     if a == b:
-        print "scu"
+        print("scu")
     else:
-        print "err"
+        print("err")
     if c == b:
-        print "scu"
+        print("scu")
     else:
-        print "err"
+        print("err")
     if set(c) == set(b):
-        print "scu"
+        print("scu")
     else:
-        print "err"
+        print("err")

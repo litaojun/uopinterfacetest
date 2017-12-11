@@ -28,8 +28,8 @@ def getopr():
     print(r.content) #你也能以字节的方式访问请求响应体，对于非文本请求：
     
     r = requests.get('https://github.com/timeline.json')
-    print r.status_code       #JSON 响应内容
-    print r.json()
+#     print r.status_code       #JSON 响应内容
+#     print r.json()
     
     #定制请求头
     url = 'https://api.github.com/some/endpoint'
@@ -53,7 +53,7 @@ def getopr():
     url = 'http://httpbin.org/post'
     files = {'file': open('report.xls', 'rb')}
     r = requests.post(url, files=files)
-    print r.text
+    print(r.text)
     
     files = {'file': ('report.xls', open('report.xls', 'rb'), 'application/vnd.ms-excel', {'Expires': '0'})}
     r = requests.post(url, files=files)

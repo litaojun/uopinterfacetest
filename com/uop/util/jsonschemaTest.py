@@ -58,7 +58,7 @@ def a():
                                 "headimgUrl": "http://wx.qlogo.cn/mmopen/6Jkxxk5dmNk7HlVN9mLz5BgiakCF8qpVYp4RyDfu7q0I3gu3fGcBr0ng7TyA7U2kYnXleiblKHQFjATH8jelOcbbb35nADZgry/0",
                                 "isSign": False,
                                 "readInvite": False
-                              }
+                            }
                }
     jsonschem = {
                     "type" : "object",
@@ -94,4 +94,4 @@ if __name__ == '__main__':
     #checkSchema()
     #checkSchemaFormat()
     a()
-    print "a"
+    print("a")

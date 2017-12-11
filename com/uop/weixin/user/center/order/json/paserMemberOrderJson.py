@@ -103,15 +103,24 @@ userCenterScma = {
 validator = Validator(userCenterScma)
 #
 @check_rspdata(validator)
-def parseUserPointByRspJSON(response=None):
+def parseUseOrderListByRspJSON(response=None):
     #addressjson = response.TEXT\
-    print "response=%s" % str(response)
-    actvidlist = []
+    print("response=%s" % str(response))
+    orderlist = response.get("data").get("data")
+    for order in orderlist:
+        orderStatus,orderId,buyCount,picPath,point,itemPrice = yield   order.get("orderStatus"),\
+                                                                       order.get("id"),\
+                                                                       order.get("details")[0].get("buyCount"),\
+                                                                       order.get("details")[0].get("picPath"),\
+                                                                       order.get("details")[0].get("point"),\
+                                                                       order.get("details")[0].get("itemPrice")
+                                                               
     return response
     
+def parseOrderFildByJson(response=None):
+    pass
 
-
-if __name__ == '__main__':
+if  __name__ == '__main__':
     curjson = {
                         "code": "000000",
                         "message": "成功",

@@ -9,7 +9,7 @@ from selenium import webdriver
 from opg.unit.testcaseRunMgr import runTestOneCls
 from opg.unit.parametrized import ParametrizedTestCase
 from com.uop.util.configurl import homepageurl
-from com.uop.util.httpRequest import  http_get,http_post
+#from com.uop.util.httpRequest import  http_get,http_post
 import requests
 from com.uop.util.jsonTransform import transUopHttpHears
 #from com.uop.weixin.user.raffle.cpr.httpsTest import hearder
@@ -32,19 +32,19 @@ class homepages(ParametrizedTestCase):
         self.assertTrue(1<2, self.getInputData())
         
     def homepagegetError(self):
-        homecontent = http_get(homepageurl)
+        homecontent = requests.get(homepageurl)
         inputdata =  self.getInputData()
         #inputdata =  unicode(inputdata, "utf-8") 
-        print inputdata
-        homeresp = http_post(homepageurl,param=inputdata)
+        print(inputdata)
+        homeresp = requests.post(homepageurl,param=inputdata)
         self.assertTrue(1>2,inputdata)
        
     def homepagegetlen(self):
-        homecontent = http_get(homepageurl)
+        homecontent = requests.get(homepageurl)
         inputdata =  self.getInputData()
         #inputdata =  unicode(inputdata, "utf-8")
-        print inputdata
-        homeresp = http_post(homepageurl,param=inputdata)
+        print(inputdata)
+        homeresp = requests.post(homepageurl,param=inputdata)
         self.assertTrue(1>2,inputdata)
         
     def getInputData(self):

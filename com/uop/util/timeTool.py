@@ -11,7 +11,7 @@ import time
 def strStrptime(timeStr="2016-05-05 20:28:54",dateFormate="%Y-%m-%d %H:%M:%S"):
     #转换成时间数组
     timeArray = time.strptime(timeStr, dateFormate)
-    print timeArray
+    print(timeArray)
     return timeArray
 
 #将时间转换成时间戳
@@ -39,15 +39,15 @@ def timestampFtime(timestamp = 1462451334,formatdate = "%Y-%m-%d %H:%M:%S"):
 def getNowTime(formatedate = "%Y-%m-%d %H:%M:%S"):
     #获取当前时间,转换为时间戳
     time_now = int(time.time())
-    print time_now
+    print(time_now)
     #转换成localtime
     time_local = time.localtime(time_now)
-    print time_local
+    print(time_local)
     #转换成新的时间格式(2016-05-09 18:59:20)
     dt = time.strftime(formatedate,time_local)
-    print dt
+    print(dt)
     return dt
 
 if __name__ == '__main__':
     timestamp = getNowTime()
-    print timestamp
+    print(timestamp)
