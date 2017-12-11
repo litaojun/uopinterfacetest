@@ -29,7 +29,7 @@ class Validator(object):
             print("type="+str(type(ex)))
             print("dir="+str(dir(ex)))
             print("ex.message="+str(type(ex.message)))
-            raise Exception(str(ex.message))
+            #raise Exception(ex.message)
 
 
 ##validator.py

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 '''
-Created on 2017锟斤拷11锟斤拷20锟斤拷
+Created on 2017
 
 @author: li.taojun
 '''
