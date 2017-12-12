@@ -35,6 +35,9 @@ validator = Validator(activitiesInfoScma)
 #获取非即开活动抽奖所需积分
 @check_rspdata(validator)
 def parseActivitiesPointByRspJSON(response=None):
+    '''
+       response 非即开活动详情json数据
+    '''
     #addressjson = response.TEXT\
     print("response=%s" % str(response))
     activitiesPoint = response.get("raffleBaseInfo").get("point")

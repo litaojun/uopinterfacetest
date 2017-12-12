@@ -12,6 +12,11 @@ def parseMemberDefalutAddJSON(resphome):
     pass
 #非即开活动提交请求json数据
 def transUserSignupActivitiesHttpJson(memberid="",activitiesid = "",addressid = ""):
+    '''
+        memberid : 
+        activitiesid : 
+        addressid : 
+    '''
     usersignactivities = {
                            "memberId":memberid,
                            "activitiesId":activitiesid,
