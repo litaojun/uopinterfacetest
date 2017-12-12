@@ -15,7 +15,7 @@ from uopweixin.activity.raffle import parseActivitiesPointByRspJSON
 # from uopweixin.raffle.httpsTest import hearder
 class BigWheelService(object):
     '''
-    classdocs
+                       大转盘抽奖
     '''
     userBigWheelurl = bigwheelurl
     memberId = None
@@ -23,7 +23,9 @@ class BigWheelService(object):
     activitiesId = None
     def __init__(self, memberId,openid,activitiesId):
         '''
-        Constructor
+            memberId ： 会员ID
+            openid ： 微信OPenid
+            activitiesId : 大转盘活动ID
         '''
         self.memberId = memberId
         self.openid = openid
@@ -40,19 +42,28 @@ class BigWheelService(object):
                                                  headers = jsonheart)
         return userBigWheelResultJson
     
-    #获取大转盘抽奖中奖后相关信息(订单ID,返回码）
+    #获取大转盘抽奖中奖后，从返回数据中获取相关信息(订单ID,返回码等）
     def getOrderIdFromBigWheelResultJson(self,bigWheelResultJson):
+        '''
+            bigWheelResultJson  :  大转盘抽奖动作中奖后返回的json数据
+        '''
         userBigResultJson = self.userSignupActivities()
         orderId = paserOrderIdFromJson(respse = userBigResultJson)
         return orderId
     
     #获取大转盘抽奖未中奖(返回码）
     def getRetcodeFromBigWheelResultJson(self,bigWheelResultJson):
+        '''
+            bigWheelResultJson  :  大转盘抽奖动作中奖后返回的json数据
+        '''
         pass 
     
     
     #大转盘去领奖动作 
     def userBigWheelAward(self,orderId):
+        '''
+            orderId  : 大转盘抽奖动作中奖后返回的json数据中的orderId
+        '''
         jsonheart = transUopHttpHears(self.memberId,self.openid)
         useraddrspjson = requests.get(url=self.defaultAddress,headers = jsonheart)
         useraddressid = parseMemberDefalutAddJSON(useraddrspjson)
